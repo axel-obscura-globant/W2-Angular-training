@@ -7,6 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './modules/login/login.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: AppComponent }, // Define the default route
@@ -18,7 +20,9 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,3 +34,4 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
