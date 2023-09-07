@@ -11,9 +11,9 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 
 const routes: Routes = [
-  { path: '/', component: AppComponent },
-  { path: '/dashboard', component: DashboardComponent },
-  { path: '/login', component: LoginComponent }
+  { path: '', component: AppComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 @NgModule({
@@ -27,7 +27,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forChild(routes)
+    RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],
   providers: [],
