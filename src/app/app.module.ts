@@ -11,7 +11,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent }, // Define the default route
+  { path: '/', component: AppComponent }, // Define the default route
   { path: 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent }
 ];
