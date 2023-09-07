@@ -5,13 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './modules/dashboard/components/dashboard.component';
 import { LoginComponent } from './modules/login/login.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { WelcomeComponent } from './modules/welcome/welcome.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: WelcomeComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent }
 ];
@@ -22,7 +23,8 @@ const routes: Routes = [
     DashboardComponent,
     LoginComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
