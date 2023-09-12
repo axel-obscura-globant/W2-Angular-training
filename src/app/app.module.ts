@@ -10,10 +10,11 @@ import { LoginComponent } from './modules/login/login.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
+import { UserComponent } from './modules/user/user.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  { path: 'dashboard/:id/:name', component: DashboardComponent },
   { path: 'login', component: LoginComponent }
 ];
 
@@ -24,7 +25,8 @@ const routes: Routes = [
     LoginComponent,
     HeaderComponent,
     FooterComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
